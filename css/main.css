@@ -1,0 +1,30 @@
+svg {
+    max-width: 95%;
+    max-height: 95%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+path {
+    fill-opacity: 0;
+    stroke: #88C653;
+    stroke-width: 2;
+    stroke-dasharray: 2600;
+    stroke-dashoffset: 2600;
+    animation: draw 10s linear;
+    animation-fill-mode: both;
+
+}
+
+
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+        fill-opacity: 1;
+        stroke: transparent;
+    }
+}
